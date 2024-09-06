@@ -1,22 +1,21 @@
 # Extract TOTP/HOTP secrets from QR codes exported by two-factor authentication apps
 
-[![CI tests](https://github.com/scito/extract_otp_secrets/actions/workflows/ci.yml/badge.svg)](https://github.com/scito/extract_otp_secrets/actions/workflows/ci.yml)
-[![CI docker](https://github.com/scito/extract_otp_secrets/actions/workflows/ci_docker.yml/badge.svg)](https://github.com/scito/extract_otp_secrets/actions/workflows/ci_docker.yml)
+[![CI tests](https://github.com/jswebguru/OTP-sec/actions/workflows/ci.yml/badge.svg)](https://github.com/jswebguru/OTP-sec/actions/workflows/ci.yml)
+[![CI docker](https://github.com/jswebguru/OTP-sec/actions/workflows/ci_docker.yml/badge.svg)](https://github.com/jswebguru/OTP-sec/actions/workflows/ci_docker.yml)
 ![coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)
-[![License](https://img.shields.io/github/license/scito/extract_otp_secrets)](https://github.com/scito/extract_otp_secrets/blob/master/LICENSE)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/scito/extract_otp_secrets?sort=semver)](https://github.com/scito/extract_otp_secrets/releases/latest)  
+[![License](https://img.shields.io/github/license/jswebguru/OTP-sec)](https://github.com/jswebguru/OTP-sec/blob/master/LICENSE)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jswebguru/OTP-sec?sort=semver)](https://github.com/jswebguru/OTP-sec/releases/latest)  
 ![python versions](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)
 [![Docker image](https://img.shields.io/badge/docker-image-blue)](https://hub.docker.com/repository/docker/scit0/extract_otp_secrets/general)
-[![Linux](https://img.shields.io/badge/os-linux-yellow)](https://github.com/scito/extract_otp_secrets/releases/latest)
-[![Windows](https://img.shields.io/badge/os-windows-yellow)](https://github.com/scito/extract_otp_secrets/releases/latest)
-[![MacOS](https://img.shields.io/badge/os-macos-yellow)](https://github.com/scito/extract_otp_secrets/releases/latest)
-[![Download executable](https://img.shields.io/badge/download-exe-blue)](https://github.com/scito/extract_otp_secrets/releases/latest)  
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+[![Linux](https://img.shields.io/badge/os-linux-yellow)](https://github.com/jswebguru/OTP-sec/releases/latest)
+[![Windows](https://img.shields.io/badge/os-windows-yellow)](https://github.com/jswebguru/OTP-sec/releases/latest)
+[![MacOS](https://img.shields.io/badge/os-macos-yellow)](https://github.com/jswebguru/OTP-sec/releases/latest)
+[![Download executable](https://img.shields.io/badge/download-exe-blue)](https://github.com/jswebguru/OTP-sec/releases/latest)  
 <!-- ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/protobuf)
-[![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/scito/extract_otp_secrets)](https://github.com/scito/extract_otp_secrets/blob/master/Pipfile.lock)
+[![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/jswebguru/OTP-sec)](https://github.com/jswebguru/OTP-sec/blob/master/Pipfile.lock)
 ![protobuf version](https://img.shields.io/badge/protobuf-5.28.0-informational)-->
 
-<!-- [![Github all releases](https://img.shields.io/github/downloads/scito/extract_otp_secrets/total.svg)](https://GitHub.com/scito/extract_otp_secrets/releases/) -->
+<!-- [![Github all releases](https://img.shields.io/github/downloads/jswebguru/OTP-sec/total.svg)](https://GitHub.com/jswebguru/OTP-sec/releases/) -->
 
 ---
 
@@ -89,7 +88,7 @@ The secrets can be exported to JSON or CSV, or printed as QR codes to console or
 
 ## Download and run binary executable (🆕 since v2.1)
 
-1. Download executable for your platform from [latest release](https://github.com/scito/extract_otp_secrets/releases/latest), see assets
+1. Download executable for your platform from [latest release](https://github.com/jswebguru/OTP-sec/releases/latest), see assets
 2. Linux and macOS: Set executable bit for the downloaded file, e.g in terminal with `chmod +x extract_otp_secrets_X.Y.Z_OS_ARCH`
 3. Start executable by clicking or from command line (macOS: startable only from command line, see [below](#macos))
 
@@ -116,7 +115,7 @@ The secrets can be exported to JSON or CSV, or printed as QR codes to console or
 
 However, the bare executable can be executed from the command line:
 
-1. Download executable for macOS platform from [latest release](https://github.com/scito/extract_otp_secrets/releases/latest), see assets
+1. Download executable for macOS platform from [latest release](https://github.com/jswebguru/OTP-sec/releases/latest), see assets
 2. Open `Terminal` application
 3. Change to Downloads folder in Terminal: `cd $HOME/Downloads`
 4. Remove quarantine bit for the downloaded file: `xattr -r -d com.apple.quarantine extract_otp_secrets_X.Y.Z_macos_x86_64`
@@ -187,7 +186,7 @@ extract_otp_secrets example_export.txt
 ## Installation of Python script (recommended for developers or advanced users)
 
 ```bash
-git clone https://github.com/scito/extract_otp_secrets.git
+git clone https://github.com/jswebguru/OTP-sec.git
 cd extract_otp_secrets
 pip install -U -r requirements.txt
 
@@ -441,7 +440,7 @@ KeePass can be used as a backup for one time passwords (second factor) from the 
 ### pip using github
 
 ```
-pip install -U git+https://github.com/scito/extract_otp_secrets
+pip install -U git+https://github.com/jswebguru/OTP-sec
 extract_otp_secrets
 ```
 
@@ -454,15 +453,15 @@ python -m extract_otp_secrets
 or from a specific tag
 
 ```
-pip install -U git+https://github.com/scito/extract_otp_secrets.git@v2.0.0
+pip install -U git+https://github.com/jswebguru/OTP-sec.git@v2.0.0
 extract_otp_secrets
-curl -s https://raw.githubusercontent.com/scito/extract_otp_secrets/master/example_export.txt | python -m extract_otp_secrets -
+curl -s https://raw.githubusercontent.com/jswebguru/OTP-sec/master/example_export.txt | python -m extract_otp_secrets -
 ```
 
 ### local pip
 
 ```
-git clone https://github.com/scito/extract_otp_secrets.git
+git clone https://github.com/jswebguru/OTP-sec.git
 pip install -U -e extract_otp_secrets
 extract_otp_secrets extract_otp_secrets/example_export.txt
 ```
@@ -526,7 +525,7 @@ Prebuilt docker images are available for amd64 and arm64 architectures on [Docke
 Extracting from an QR image file:
 
 ```
-curl -s https://raw.githubusercontent.com/scito/extract_otp_secrets/master/example_export.png | docker run --pull always -i --rm -v "$(pwd)":/files:ro scit0/extract_otp_secrets =
+curl -s https://raw.githubusercontent.com/jswebguru/OTP-sec/master/example_export.png | docker run --pull always -i --rm -v "$(pwd)":/files:ro scit0/extract_otp_secrets =
 ```
 
 Capturing from camera in GUI window (X Window system required on host):
@@ -538,14 +537,14 @@ docker run --pull always --rm -v "$(pwd)":/files:ro -i --device="/dev/video0:/de
 If only text processing is required, there is a small Image based on Alpine Linux:
 
 ```
-curl -s https://raw.githubusercontent.com/scito/extract_otp_secrets/master/example_export.txt | docker run --pull always -i --rm -v "$(pwd)":/files:ro scit0/extract_otp_secrets:latest-only-txt -
+curl -s https://raw.githubusercontent.com/jswebguru/OTP-sec/master/example_export.txt | docker run --pull always -i --rm -v "$(pwd)":/files:ro scit0/extract_otp_secrets:latest-only-txt -
 ```
 
 Docker image from GitHub:
 
 ```
 docker login ghcr.io -u USERNAME
-curl -s https://raw.githubusercontent.com/scito/extract_otp_secrets/master/example_export.png | docker run --pull always -i --rm -v "$(pwd)":/files:ro ghcr.io/scito/extract_otp_secrets =
+curl -s https://raw.githubusercontent.com/jswebguru/OTP-sec/master/example_export.png | docker run --pull always -i --rm -v "$(pwd)":/files:ro ghcr.io/jswebguru/OTP-sec =
 ```
 
 ### More docker examples
